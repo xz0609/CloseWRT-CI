@@ -70,7 +70,7 @@ jobs:
     steps:
       - name: Checkout Projects
         uses: actions/checkout@main
-      
+
       - name: Initialization Environment
         env:
           DEBIAN_FRONTEND: noninteractive
