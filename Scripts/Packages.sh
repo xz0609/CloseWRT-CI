@@ -49,11 +49,11 @@ UPDATE_PACKAGE() {
 UPDATE_PACKAGE "argon" "sbwml/luci-theme-argon" "openwrt-25.12"
 UPDATE_PACKAGE "aurora" "eamonxg/luci-theme-aurora" "master"
 UPDATE_PACKAGE "aurora-config" "eamonxg/luci-app-aurora-config" "master"
+UPDATE_PACKAGE "fluent" "LazuliKao/luci-theme-fluent" "main"
+UPDATE_PACKAGE "footstrap" "VizzleTF/luci-theme-footstrap" "main"
 UPDATE_PACKAGE "kucat" "sirpdboy/luci-theme-kucat" "master"
 UPDATE_PACKAGE "kucat-config" "sirpdboy/luci-app-kucat-config" "master"
-UPDATE_PACKAGE "noobwrt" "nooblk-98/luci-theme-noobwrt" "master"
 UPDATE_PACKAGE "shadcn" "eamonxg/luci-theme-shadcn" "main"
-UPDATE_PACKAGE "theme-fluent" "LazuliKao/luci-theme-fluent" "main"
 
 UPDATE_PACKAGE "momo" "nikkinikki-org/OpenWrt-momo" "main"
 UPDATE_PACKAGE "nikki" "nikkinikki-org/OpenWrt-nikki" "main"
@@ -82,14 +82,20 @@ UPDATE_PACKAGE "natmapt" "muink/openwrt-natmapt" "master"
 UPDATE_PACKAGE "stuntman" "muink/openwrt-stuntman" "master"
 UPDATE_PACKAGE "luci-app-natmapt" "muink/luci-app-natmapt" "master"
 
-UPDATE_PACKAGE "airpi3000m" "LianXia233/luci-app-airpi3000m-fancontrol" "main"
-UPDATE_PACKAGE "h5000m" "LianXia233/luci-app-h5000m-netmode" "main"
+UPDATE_PACKAGE "airpi3000m-fancontrol" "LianXia233/luci-app-airpi3000m-fancontrol" "main"
+UPDATE_PACKAGE "chfs" "LianXia233/luci-app-chfs" "main"
+UPDATE_PACKAGE "fm350" "LianXia233/luci-app-fm350" "main"
+UPDATE_PACKAGE "h5000m-netmode" "LianXia233/luci-app-h5000m-netmode" "main"
+UPDATE_PACKAGE "mt5700" "LianXia233/luci-app-mt5700" "main"
+UPDATE_PACKAGE "mt5700m" "LianXia233/luci-app-mt5700m" "main"
+UPDATE_PACKAGE "netmonitor" "LianXia233/luci-app-netmonitor" "main"
 UPDATE_PACKAGE "qmodem-generic" "LianXia233/luci-app-qmodem-generic" "main"
 
 UPDATE_PACKAGE "adguardhome" "xiaoxiao29/luci-app-adguardhome" "master" "" "luci-app-adguardhome AdGuardHome"
-UPDATE_PACKAGE "luci-app-tailscale" "whzhni1/luci-app-tailscale" "main" "" "luci-app-tailscale tailscale"
-#UPDATE_PACKAGE "lucky" "gdy666/luci-app-lucky" "main" "" "luci-app-lucky lucky"
-UPDATE_PACKAGE "luci-app-lucky" "whzhni1/luci-app-lucky" "main" "" "luci-app-lucky"
+UPDATE_PACKAGE "luci-app-tailscale" "Tokisaki-Galaxy/luci-app-tailscale-community" "master" "" "luci-app-tailscale"
+#UPDATE_PACKAGE "luci-app-tailscale" "whzhni1/luci-app-tailscale" "main" "" "luci-app-tailscale tailscale"
+UPDATE_PACKAGE "lucky" "gdy666/luci-app-lucky" "main" "" "luci-app-lucky lucky"
+#UPDATE_PACKAGE "luci-app-lucky" "whzhni1/luci-app-lucky" "main" "" "luci-app-lucky"
 
 
 #更新软件包版本
@@ -135,7 +141,7 @@ UPDATE_VERSION() {
 
 #UPDATE_VERSION "软件包名" "测试版，true，可选，默认为否"
 #UPDATE_VERSION "sing-box"
-UPDATE_VERSION "tailscale"
+#UPDATE_VERSION "tailscale"
 
 #引入私有扩展脚本
 if [ -f "$GITHUB_WORKSPACE/Scripts/PRIVATE.sh" ]; then
